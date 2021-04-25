@@ -1,0 +1,113 @@
+{% include 'header.html' %}
+
+<body>
+ <!-- ======= Header ======= -->
+ <header id="header" class="fixed-top not-front">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <!-- <h1 class="logo"><a href="index.html">OSM<span>.</span></a></h1> -->
+      <a href="{{url_for('main_page')}}" class="logo"><img src="../static/assets/img/osmwhitenew.png" alt="" class="img-fluid"></a>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="{{ url_for('main_page')}}">Kompania</a></li>
+          <li><a href="{{url_for('about')}}">Rreth nesh</a></li>
+          <li><a href="{{url_for('sherbime')}}">Sherbime</a></li>
+          <li><a href="{{url_for('kontakt')}}">Kontakt</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+</header><!-- End Header -->
+
+<main id="main" class="not-front-page">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="../static/assets/img/about2.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Rreth Nesh</h3>
+            <p class="font-italic">
+              OneStopMedia është një agjenci dixhitale që përqendrohet në cilësi, inovacion dhe shpejtësi.
+              Ne perdorim teknologjitë më të reja për të sjellë rezultate dhe për të zhvilluar biznesin e klientëve tanë.
+            </p>
+            <p>Disa nga shërbimet tona:</p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Social Media And Email Marketing.</li>
+              <li><i class="ri-check-double-line"></i> Custom Web Development And Design.</li>
+              <li><i class="ri-check-double-line"></i> Search Engine Optimization.</li>
+            </ul>
+            <p>
+              Ne ofrojmë zgjidhje të qëndrueshme dhe afatgjata të cilat ndihmojnë biznesin tuaj të ecë përpara me shpejtësi dhe efikasitet.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Foto te kompanive (TODO: SESHPEJTI) ======= -->
+    <!-- <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="owl-carousel clients-carousel">
+          <img src="../static/assets/img/clients/client-1.png" alt="">
+          <img src="../static/assets/img/clients/client-2.png" alt="">
+          <img src="../static/assets/img/clients/client-3.png" alt="">
+          <img src="../static/assets/img/clients/client-4.png" alt="">
+          <img src="../static/assets/img/clients/client-5.png" alt="">
+          <img src="../static/assets/img/clients/client-6.png" alt="">
+          <img src="../static/assets/img/clients/client-7.png" alt="">
+          <img src="../static/assets/img/clients/client-8.png" alt="">
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Clients Section -->
+
+    <div class="black-border"></div>
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="image col-lg-6" style='background-image: url("../static/assets/img/about4.jpg");' data-aos="fade-right"></div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-receipt"></i>
+              <h4>Analizë</h4>
+              <p>Identifikojmë nevojat tuaja dhe ju ndihmojmë të përcaktoni objektivat, nëpërmjet studimeve paraprake të tregut.</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-cube-alt"></i>
+              <h4>Realizim</h4>
+              <p>Zhvillojmë projektet brenda afateve të përcaktuara duke përdorur teknologjitë dhe framework-et më të reja.</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-images"></i>
+              <h4>Strategji</h4>
+              <p>Ne jemi të specializuar për të ndihmuar biznesin të arrijë rezultate maksimale.
+                Çdo strategji është e projektuar që të jetë e suksesshme dhe afatgjatë.
+              </p>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-shield"></i>
+              <h4>Siguri</h4>
+              <p>Prioriteti ynë është siguria maksimale.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+</main>
+
+{% include 'footer.html' %}
+</body>
+</html>

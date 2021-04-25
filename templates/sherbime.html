@@ -1,0 +1,99 @@
+{% include 'header.html' %}
+
+<body>
+
+<!-- ======= Header ======= -->
+ <header id="header" class="fixed-top not-front">
+    <div class="container d-flex align-items-center justify-content-between">
+  
+      <!-- <h1 class="logo"><a href="index.html">OSM<span>.</span></a></h1> -->
+      <a href="{{url_for('main_page')}}" class="logo"><img src="../static/assets/img/osmwhitenew.png" alt="" class="img-fluid"></a>
+  
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="{{ url_for('main_page')}}">Kompania</a></li>
+          <li><a href="{{url_for('about')}}">Rreth nesh</a></li>
+         <li><a href="{{url_for('sherbime')}}">Sherbime</a></li>
+          <li><a href="{{url_for('kontakt')}}">Kontakt</a></li>
+  
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main" class="not-front-page">
+
+       <!-- ======= Services Section ======= -->
+       <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+          
+          <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+      
+              <div class="row">
+                <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+                  <img src="../static/assets/img/sherbime1.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+                  <div class="section-title">
+                    <h2>Services</h2>
+                    <p>Web Development</p>
+                  </div>
+                  <p class="font-italic">
+                    Ne mund të krijojmë dhe ndërtojmë website të personalizuara në internet në varësi të nevojave dhe qëllimeve të biznesit tuaj.
+                    Ne kemi një ekip të përkushtuar dhe të gatshëm për të përmbushur kërkesat tuaja!
+      
+                  </p>
+                  <p>Proçesi ynë:</p>
+                  <ul>
+                    <li><i class="ri-check-double-line"></i> Planifikim.</li>
+                    <li><i class="ri-check-double-line"></i> Zhvillim.</li>
+                    <li><i class="ri-check-double-line"></i> Testim.</li>
+                    <li><i class="ri-check-double-line"></i> Lançim.</li>
+                    <li><i class="ri-check-double-line"></i> Mirembajtje.</li>
+                  </ul>
+                </div>
+              </div>
+      
+            </div>
+          </section>
+          
+          <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+      
+              <div class="row">
+               
+                <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+                  <div class="section-title">
+                    <h2>Services</h2>
+                    <p>Online Marketing</p>
+                  </div>
+                  <p class="font-italic">
+                    Ne kemi një ekip të specializuar të marketingut në internet që do t'ju ndihmojë të rrisni trafikun e faqes tuaj në internet,
+                    lidhjet, konvertimet dhe klientët duke zgjeruar shikueshmërinë e biznesit tuaj.
+                  </p>
+                  <ul>
+                    <li><i class="ri-check-double-line"></i> Digital Branding.</li>
+                    <li><i class="ri-check-double-line"></i> E-Mail Marketing.</li>
+                    <li><i class="ri-check-double-line"></i> Social Media Marketing.</li>
+                    <li><i class="ri-check-double-line"></i> Pay Per Click.</li>
+                    <li><i class="ri-check-double-line"></i> SEO.</li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+                  <img src="../static/assets/img/sherbime2.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+      
+            </div>
+          </section>
+
+        </div>
+      </section><!-- End Services Section -->
+
+  </main>
+
+  {% include 'footer.html' %}
+  
+</body>
+</html>
