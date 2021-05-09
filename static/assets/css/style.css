@@ -1225,3 +1225,23 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+.message-sent{
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  color: #976b13;
+}
+
+
+.contact button[type="submit"] {
+  background: #151515;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact button[type="submit"]:hover {
+  background: #f0c265;
+}

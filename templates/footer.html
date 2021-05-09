@@ -10,12 +10,12 @@
               <p>
                 Tiranë, Albania <br>
               <br>
-                <strong>Phone:</strong> TODO:<br>
+                <strong>Phone:</strong> +355 67 55 613 26<br>
                 <strong>Email:</strong> TODO:<br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.instagram.com/onestopmedia.al/" class="instagram"><i class="bx bxl-instagram"></i></a>
                 <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
@@ -36,20 +36,19 @@
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="{{url_for('sherbime')}}">Web Design</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{{url_for('sherbime')}}">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{url_for('sherbime')}}">Online Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{url_for('sherbime')}}">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{url_for('sherbime')}}#web-dev">Online Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{url_for('sherbime')}}#online-market">SEO</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
-            <p>Bëhuni subscribe për t'u informuar për çdo ofertë të re.</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+            <p>Abonohuni tek ne për t'u informuar për çdo ofertë të re.</p>
+            <form action="{{url_for('subscribe')}}" method="post">
+              <input type="email" name="email"  placeholder="Email-i juaj"><input type="submit" value="Subscribe">
             </form>
 
           </div>
-
         </div>
       </div>
     </div>

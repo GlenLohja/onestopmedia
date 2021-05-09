@@ -19,16 +19,17 @@ def about():
 def sherbime():
     return render_template("sherbime.html")
 
-@app.route("/contact", methods=['POST','GET'])
+@app.route("/kontakt", methods=['POST','GET'])
 def kontakt():
     if request.method=='POST':
         data=request.form
+
         with smtplib.SMTP("smtp.mail.yahoo.com") as connection:
             connection.starttls()
             connection.login("glenlohja1@yahoo.com", "lozybvymlfezdgce")
             connection.sendmail(
                 from_addr="glenlohja1@yahoo.com",
-                to_addrs="info@upt-support.com",
+                to_addrs="refikuensi@gmail.com",
                 msg=f"Subject:Message from {data['subject'].title()}\n\nName: {data['name']}\nEmail: {data['email']}"
                 f"\nMessage: {data['message']}"
             )
@@ -36,10 +37,19 @@ def kontakt():
     return render_template("contact.html",message='no')
 
 
-
-# @app.route('/detyra-kursi/<lenda>')
-# def detyra(lenda):
-#     return render_template("detyrakursi.html",lenda=lenda)
+@app.route('/abonimi',methods=['POST','GET'])
+def subscribe():
+    if request.method=='POST':
+        data=request.form
+        with smtplib.SMTP("smtp.mail.yahoo.com") as connection:
+            connection.starttls()
+            connection.login("glenlohja1@yahoo.com", "lozybvymlfezdgce")
+            connection.sendmail(
+                from_addr="glenlohja1@yahoo.com",
+                to_addrs="refikuensi@gmail.com",
+                msg=f"Subject: Subscribe\n\nName: {data['email']} sapo u be subscribe."
+            )
+        return redirect(url_for('main_page'))
 
 
 # @app.route('/sitemap.xml')
